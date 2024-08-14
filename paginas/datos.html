@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Datos</title>
+		<link rel="stylesheet" href="../Index/styles.css" />
+		<link rel="stylesheet" href="form.css" />
+		<link rel="shortcut icon" href="icono.png">
+	</head>
+
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+				    <div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Atencion al cliente</span>
+							<span class="number">722-101-5733</span>
+					    </div>
+					</div>
+
+					<div class="container-logo">
+						<img class="texto1" src="../media/Texto1.png" />
+					</div>
+
+					<div class="container-user">
+						<a  href="../Login/login.html"><i class="fa-solid fa-user"></i></a>
+						<i class="fa-solid fa-basket-shopping"></i>
+						<div class="content-shopping-cart">
+							<span class="text">Carrito</span>
+							<span class="number">(0)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="../Index/index.html">Inicio</a></li>
+						<li><a href="../paginas/categorias.html">Categorias</a></li>
+						<li><a href="../paginas/productos.html">Productos</a></li>
+						<li><a href="../paginas/servicios.html">Servicios</a></li>
+						<li><a href="#">Informacion</a></li>
+						<li><a href="../paginas/datos.html">Datos</a></li>
+						<li><a href="../paginas/mostrar_pacientes.php">Pacientes</a></li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+
+
+<!-- -----------------------------------------------------------------------------------------Formulario medico-->
+
+
+  <section class="container top-formulario_r">
+  	<br><h1 class="heading-1">Formulario Medico</h1>
+     <div class="container_f">
+        <form class="medico" method="POST" action="insertar_paciente.php">
+
+        	 <fieldset class="fil">
+                <legend>Categoría de Registro:</legend>
+                <select id="categoria" name="categoria" required>
+                    <option value="medicina_general">Medicina General</option>
+                    <option value="laboratorio">Laboratorio</option>
+                    <option value="tratamientos">Tratamientos</option>
+                    <option value="medicina_preventiva">Medicina Preventiva</option>
+                    <option value="odontologia">Odontología</option>
+                    <option value="ginecologia">Ginecología</option>
+                </select>
+            </fieldset>
+            <fieldset class="fil">
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="estado_civil">Numero telefonico:</label>
+                <input type="text" id="estado_civil" name="estado_civil">
+
+                <label for="ocupacion">Correo Electronico:</label>
+                <input type="text" id="ocupacion" name="ocupacion">
+
+                <label for="residencia">Lugar de Residencia:</label>
+                <input type="text" id="residencia" name="residencia">
+            </fieldset>
+
+            <fieldset class="fil">
+                <legend>Motivo de Consulta</legend>
+                <textarea id="motivo" name="motivo" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset class="fil">
+                <legend>Historia de la Enfermedad Actual</legend>
+                <textarea id="historia" name="historia" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset class="fil">
+                <legend>Antecedentes Médicos</legend>
+                <label for="enfermedades">Enfermedades Previas:</label>
+                <textarea id="enfermedades" name="enfermedades" rows="2"></textarea>
+
+                <label for="cirugias">Cirugías y Hospitalizaciones:</label>
+                <textarea id="cirugias" name="cirugias" rows="2"></textarea>
+
+                <label for="alergias">Alergias:</label>
+                <textarea id="alergias" name="alergias" rows="2"></textarea>
+
+                <label for="medicamentos">Medicamentos Actuales:</label>
+                <textarea id="medicamentos" name="medicamentos" rows="2"></textarea>
+
+                <label for="vacunaciones">Vacunaciones:</label>
+                <textarea id="vacunaciones" name="vacunaciones" rows="2"></textarea>
+            </fieldset>
+
+            <fieldset class="fil">
+                <legend>Antecedentes Familiares</legend>
+                <textarea id="familiares" name="familiares" rows="4"></textarea>
+            </fieldset>
+            
+            <fieldset class="fil">
+                <legend id="mujer"><legend id="anti">Antecedentes Gineco-Obstétricos</legend> Solo en caso de ser necesario*</legend>
+                <label for="menarca">Menarca:</label>
+                <input type="text" id="menarca" name="menarca">
+
+                <label for="ciclo">Ciclo Menstrual:</label>
+                <textarea id="ciclo" name="ciclo" rows="2"></textarea>
+
+                <label for="embarazos">Embarazos:</label>
+                <textarea id="embarazos" name="embarazos" rows="2"></textarea>
+
+                <label for="ultima_menstruacion">Fecha de Última Menstruación:</label>
+                <input type="date" id="ultima_menstruacion" name="ultima_menstruacion">
+            </fieldset>
+
+            <fieldset class="fil">
+                <legend>Hábitos y Estilo de Vida</legend>
+                <label for="tabaquismo">Tabaquismo:</label>
+                <textarea id="tabaquismo" name="tabaquismo" rows="2"></textarea>
+
+                <label for="alcohol">Consumo de Alcohol:</label>
+                <textarea id="alcohol" name="alcohol" rows="2"></textarea>
+
+                <label for="drogas">Uso de Drogas:</label>
+                <textarea id="drogas" name="drogas" rows="2"></textarea>
+
+                <label for="actividad">Actividad Física:</label>
+                <textarea id="actividad" name="actividad" rows="2"></textarea>
+
+                <label for="dieta">Dieta:</label>
+                <textarea id="dieta" name="dieta" rows="2"></textarea>
+
+                <label for="sueno">Sueño:</label>
+                <textarea id="sueno" name="sueno" rows="2"></textarea>
+            </fieldset>
+
+            <fieldset class="fil">
+                <legend>Antecedentes Psicosociales</legend>
+                <textarea id="psicosociales" name="psicosociales" rows="2"></textarea>
+            </fieldset>
+
+            <button class="button_f" type="submit">Enviar</button>
+        </form>
+    </div>
+  </section>
+
+
+
+<!-- -----------------------------------------------------------------------------------------pie de pagina-->
+		<footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Av Miguel Hidalgo 46, La Estación, 52006 Lerma de Villada, Méx.
+							</li>
+							<li>Teléfono: 722-101-5733</li>
+							<li>EmaiL: medic_ad@gmail.com</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="google">
+								<i class="fa-brands fa-google"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Acerca de Nosotros</a></li>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">Contactános</a></li>
+						</ul>
+					</div>
+
+					<div class="my-account">
+						<p class="title-footer">Mi cuenta</p>
+
+						<ul>
+							<li><a href="#">Mi cuenta</a></li>
+							<li><a href="#">Historial de ordenes</a></li>
+							<li><a href="#">Boletín</a></li>
+							<li><a href="#">Reembolsos</a></li>
+						</ul>
+					</div>
+
+					<div class="newsletter">
+						<p class="title-footer">Boletín informativo</p>
+
+						<div class="content">
+							<p>
+								Registrate a nuestros boletines ahora y mantente tu salud siempre segura.
+							</p>
+	
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

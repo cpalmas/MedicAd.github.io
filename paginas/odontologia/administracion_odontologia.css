@@ -1,0 +1,66 @@
+.odontologia-table {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.odontologia-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.odontologia-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.odontologia-table th, .odontologia-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.odontologia-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: #333;
+}
+
+.odontologia-table td {
+    color: #333;
+}
+
+.odontologia-table .action-view,
+.odontologia-table .action-edit,
+.odontologia-table .action-delete {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.odontologia-table .action-view:hover {
+    color: #007bff;
+}
+
+.odontologia-table .action-edit:hover {
+    color: #28a745;
+}
+
+.odontologia-table .action-delete:hover {
+    color: #dc3545;
+}
+
+.odontologia-table i {
+    font-size: 18px;
+}

@@ -1,0 +1,135 @@
+body {
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 20px;
+}
+
+.image-container {
+    width: 90%;
+    max-width: 300px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    transition: background 0.3s ease-in-out; /* No cambiar esto */
+}
+
+.image-container:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+    transform: translateY(-3%);
+    transition: transform 0.6s ease-in-out; /* Transición más lenta solo para el desplazamiento */
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.discount-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 10; /* Asegurar que la etiqueta de descuento esté sobre otros elementos */
+}
+
+.image-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.image-container h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.image-container .p0 {
+    color: green;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.image-container .p1 {
+    color: black;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: transparent;
+    transition: color 0.3s ease; /* Esta transición no cambia */
+    z-index: 20; /* Asegurar que el icono del carrito esté sobre otros elementos */
+}
+
+.image-container:hover .cart-icon {
+    color: #006064;
+}
+
+.buy-section {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buy-section input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.buy-section button {
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    background-color: #006064;
+    border: 2px solid #fff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Esta transición no cambia */
+}
+
+.buy-section button:hover {
+    background-color: white;
+    color: #006064;
+    border: 2px solid #006064;
+}

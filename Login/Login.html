@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../media/icono.png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="registerForm" action="registro.php" method="POST" onsubmit="return encryptPassword()">
+                <h1>Crear una cuenta</h1>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-google"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <span>o utiliza tu correo electrónico para registrarte</span>
+                <input name="nombre" type="text" placeholder="Nombre" required>
+                <input name="correo" type="email" placeholder="Correo" required>
+                <input name="contraseña" type="password" id="password" placeholder="Contraseña" required>
+                <input class="button" type="submit" value="Registrarse">
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="acceso.php" method="POST">
+                <h1>Iniciar Sesión</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fa fa-twitter"></i></a>
+                </div>
+                <span>o utiliza tu contraseña de correo electrónico</span>
+                <input name="l_correo" type="email" placeholder="Correo" required>
+                <input name="l_contraseña" type="password" placeholder="Contraseña" required>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <input class="button" type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>Ingrese sus datos personales para utilizar todas las funciones del sitio</p>
+                    <a class="button1" class="hidden" id="login">Iniciar Sesión</a>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¿Qué tal?</h1>
+                    <p>Regístrese con sus datos personales para utilizar todas las funciones del sitio</p>
+                    <a class="button1" class="hidden" id="register">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="metodo.js"></script>
+</body>
+
+</html>

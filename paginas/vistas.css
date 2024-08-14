@@ -1,0 +1,246 @@
+/*************************************************************************************************TABLA DE REGISTRO*/
+.top-formulario_r {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container_f {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;  /* Espacio arriba */
+    margin-bottom: 15px; 
+    overflow: hidden;
+
+}
+
+.container_mod {
+    width: 40%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #006064;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 15px;  
+    margin-bottom: 15px; 
+    overflow: hidden;
+}
+
+.f_titulo{
+    font-size: 20px;
+    text-align: center;
+    color: #006064;
+}
+
+.container_l {
+    padding: 10px;
+    width: 95%;
+    height: auto;
+    background-color: #fff;
+   
+    border-style: solid;
+    border-width: 2px;
+    border-color: #006064;
+    margin-bottom: 15px;
+    margin: auto;
+    margin-top: 15px;  
+    overflow: hidden;
+}
+
+.l_titulo{
+    font-size: 20px;
+    text-align: center;
+    color: #006064;
+}
+
+.medico {
+    background: #fff;
+    padding: 20px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: #006064;
+}
+
+.fil {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#mujer {
+    color: red;
+    font-size: 10px;
+}
+
+#anti {
+   font-size: 14px;
+   font-weight: bold;
+   color: #333;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.button_f {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    background-color:  #006064;
+    color: #fff;
+    border: 2px solid #006064;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.button_f:hover {
+    background-color:white;
+    border: 2px solid #006064;
+    color:  #006064;
+    transition-duration: 0.5s;
+}
+
+.button_c{
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    background-color:#006064;
+    border: 2px solid #fff;
+    color:  white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.button_c:hover {
+    background-color: white;
+    color: #006064;
+    border: 2px solid #006064;
+    transition-duration: 0.5s;
+}
+
+.button_l {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    background-color:#006064;
+    border: 2px solid #fff;
+    color:  white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.button_l:hover {
+    background-color: white;
+    color: #006064;
+    border: 2px solid #006064;
+    transition-duration: 0.5s;
+}
+
+.nbutton:hover{
+    color: #006064;
+}
+.nbutton{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+.tcla{
+    margin: 5px;
+    color: #006064;
+    font-size: 12px;
+}
+
+.actions{
+    width: 100%;
+    padding-top: 5px;
+    display: grid;
+}
+
+.actions_c{
+    width: 98%;
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+}
+
+
+
+#table-container {
+    height: 110%;
+    width: 80%;
+    margin: 0 auto; 
+    overflow-x: auto;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #006064; 
+    text-align: center;
+}
+
+
+th {
+    background-color: #f2f2f2; 
+    min-width: 150px;
+}
+
+td {
+    min-width: 150px; 
+}
+
+@media (max-width: 768px) {
+    #table-container {
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px; 
+    }
+}

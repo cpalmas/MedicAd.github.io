@@ -1,0 +1,66 @@
+.patient-table {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.patient-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.patient-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.patient-table th, .patient-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.patient-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: #333;
+}
+
+.patient-table td {
+    color: #333;
+}
+
+.patient-table .action-view,
+.patient-table .action-edit,
+.patient-table .action-delete {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.patient-table .action-view:hover {
+    color: #007bff;
+}
+
+.patient-table .action-edit:hover {
+    color: #28a745;
+}
+
+.patient-table .action-delete:hover {
+    color: #dc3545;
+}
+
+.patient-table i {
+    font-size: 18px;
+}

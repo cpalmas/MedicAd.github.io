@@ -1,0 +1,108 @@
+.container {
+    width: 80%; 
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+.carrusel {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%; 
+    height: 60vh; 
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.img {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 360px; 
+    width: 640px; 
+    border-radius: 15px;
+    margin: 5px;
+    object-fit: cover;
+    filter: saturate(175%);
+}
+
+.texto {
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(63, 106, 138, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 500px; 
+    height: 60px; 
+}
+
+.texto h3 {
+    text-shadow: 0px 0px 15px black;
+    padding-top: 45px; 
+    color: white;
+    font-weight: 300;
+    font-size: 25px; 
+}
+
+.texto p {
+    padding-top: 20px; 
+    align-items: center;
+    padding: 10px; 
+    color: white;
+    font-size: 12px; 
+    font-weight: 300;
+}
+
+.imagenes .texto {
+    transition: 1s;
+}
+
+.imagenes:hover .texto {
+    padding-top: 5px; 
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-100px); 
+    height: 200px; 
+    background-color: rgba(63, 106, 138, 0.71);
+}
+
+.imagenes:hover .texto h3 {
+    padding-top: 5px; 
+}
+
+.imagenes:hover .texto p {
+    transition: font-size 0s .2s linear;
+    font-size: 16px; 
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.puntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+   
+}
+
+.puntos p {
+    font-size: 30px; 
+    font-weight: 500;
+    color: black;
+}
+
+.puntos .bold {
+    font-weight: 700;
+    margin-left: 5px; 
+    margin-right: 5px; 
+    color: #006064;
+}

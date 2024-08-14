@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.mini-table {
+    margin: 40px auto 20px auto; /* Espacio superior para separar la tabla del header */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60%; /* Ancho de la tabla ajustado y centrado */
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mini-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Color del texto del título */
+    font-size: 24px; /* Tamaño del texto del título */
+    font-weight: bold; /* Peso de la fuente del título */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.icon-link .fa-cogs,
+.icon-link .fa-upload {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.icon-link:hover .fa-cogs,
+.icon-link:hover .fa-upload {
+    color: #0056b3; /* Color del ícono al pasar el ratón */
+}
+
+header, nav, .container-hero, .container-navbar {
+    width: 100%;
+    display: block;
+    clear: both; /* Asegura que el contenido debajo no se alinee a un lado */
+}

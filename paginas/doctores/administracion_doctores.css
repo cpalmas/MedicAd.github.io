@@ -1,0 +1,66 @@
+.doctor-table {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.doctor-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.doctor-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-table th, .doctor-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.doctor-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: #333; /* Color del texto de los encabezados */
+}
+
+.doctor-table td {
+    color: #333; /* Color del texto de las celdas */
+}
+
+.doctor-table .action-view,
+.doctor-table .action-edit,
+.doctor-table .action-delete {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.doctor-table .action-view:hover {
+    color: #007bff;
+}
+
+.doctor-table .action-edit:hover {
+    color: #28a745;
+}
+
+.doctor-table .action-delete:hover {
+    color: #dc3545;
+}
+
+.doctor-table i {
+    font-size: 18px;
+}
